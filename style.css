@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    height: 100vh;
+    background: radial-gradient(#6746df, #ae71d6); /* Or use radial-gradient */
+}
+
+.form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* start of input and add to form button */
+.add-form {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 10px;
+    padding-left: 1em;
+}
+
+.add-form input {
+    width: 75%;
+    height: 70%;
+    border-radius: 10px;
+    padding-left: 1em;
+}
+
+.add-form button {
+    background-color: rgb(129, 33, 129);
+    color: white;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+    width: 20%;
+    cursor: pointer;
+    transition: transform   0.3s ease;
+}
+
+.add-form button:hover {
+    transform: scale(1.1);
+}
+
+
+/* start of items already added to the list */
+.todos {
+    background-color: #f2f2f256;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.list {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    background-color: #ddd4d4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li button {
+    cursor: pointer;
+    max-height: 20px;
+}
+
+
+/* delete all button at bottom corner */
+.deleteAllBtn {
+    height: fit-content;
+    padding: 7px;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    background-color: rgb(230, 57, 57);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: transform   0.3s ease;
+    cursor: pointer;
+}
+
+.deleteAllBtn:hover {
+    transform: scale(1.2);
+    scale: 1.1;
+}
